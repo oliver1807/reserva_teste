@@ -13,8 +13,8 @@ describe('Checkout Geral', () => {
         await browser.maximizeWindow()
         await browser.url('https://www.usereserva.com/')        
         await LoginPage.acceptCookie()        
-        await $('div[class="bGGcZJZR7IsEsQjTbspD-html-close-button"]').waitForClickable()    
-        await $('div[class="bGGcZJZR7IsEsQjTbspD-html-close-button"]').click()
+        /* await $('div[class="bGGcZJZR7IsEsQjTbspD-html-close-button"]').waitForClickable()    
+        await $('div[class="bGGcZJZR7IsEsQjTbspD-html-close-button"]').click() */
     })
 
     it.skip('Checkout com login inicial', async () => {        

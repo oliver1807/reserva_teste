@@ -21,7 +21,7 @@ class CheckoutPage {
     //Elementos produto carrossel:
 
     get prod3 () {
-        return $('div[aria-label="3 of 20"]>div>section>a')
+        return $('div[aria-label="1 of 20"]>div>section>a')
     }
 
     
