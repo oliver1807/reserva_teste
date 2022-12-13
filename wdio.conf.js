@@ -63,7 +63,8 @@ exports.config = {
                 'profile.managed_default_content_settings.notifications' : 1,
                 acceptInsecureCerts: true
             }
-        }    
+        }         
+        
         // If outputDir is provided WebdriverIO can capture driver session logs
         // it is possible to configure which logTypes to include/exclude.
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
