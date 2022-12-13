@@ -17,6 +17,10 @@ describe('Checkout Geral', () => {
         await $('div[class="bGGcZJZR7IsEsQjTbspD-html-close-button"]').click() */
     })
 
+    afterEach(async () => {
+        await browser.reloadSession()
+    })
+
     it.skip('Checkout com login inicial', async () => {        
         await LoginPage.loginInicial(
             'charlie_chaplin1807@mailsac.com',
@@ -31,7 +35,18 @@ describe('Checkout Geral', () => {
         await CheckoutPage.checkoutPix()
     })
 
-    it.only('Checkout com login no final', async () => {
+    it('Login inicial', async () => {        
+        await LoginPage.loginInicial(
+            'charlie_chaplin1807@mailsac.com',
+            'Ability*3'
+            )        
+
+        await LoginPage.valLogin(
+            'Charlie!'
+            )    
+    })
+    
+    it('Checkout com login no final', async () => {
         await CheckoutPage.selProduto()
         await CheckoutPage.addCart()  
         await CheckoutPage.verDetCart()          
